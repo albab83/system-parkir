@@ -59,7 +59,7 @@ function hapus_data(id, owner, jenis, jam_masuk, jam_keluar, total_jam, bayarMob
     _.find(arr, ['owner', owner]);
     _.find(arr, ['jenis', jenis]);
     _.find(arr, ['jam_masuk', jam_masuk]);
-    jam_keluar = now.getHours();
+    jam_keluar = prompt('masukan jam keluar saat ini');
     if(jam_keluar < jam_masuk){
         return alert("maaf jam tidak valid");
     }
